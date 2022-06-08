@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def stall():
-    stalling = random.uniform(0, 2)
+    stalling = random.uniform(0, 1)
     time.sleep(stalling)
     return f"done stalling for {stalling}"
 
